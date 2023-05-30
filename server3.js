@@ -1,6 +1,6 @@
 const mongoose= require('mongoose') 
 
-const uri = `mongodb://mamo:1234@localhost:27017/neumaticos/?authMechanism=PLAIN&authSource=%24external`;
+const uri = `mongodb://localhost:27017/neumaticos`;
 
 mongoose.connect(uri, {
     useNewUrlParser: true,
