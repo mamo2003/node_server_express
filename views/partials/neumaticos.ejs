@@ -1,0 +1,32 @@
+    <h1><%= listaNeumaticos %></h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">medida</th>
+            <th scope="col">marca</th>
+            <th scope="col">foto</th>
+            <th scope="col">precio</th>
+            <th scope="col">stock</th>
+            <th scope="col">estado</th>
+            <th scope="col">vehiculo</th>
+        </tr>
+        </thead>
+        <tbody>
+    
+        <% if (arrayNeumaticos.length > 0) { %>
+            <% arrayNeumaticos.forEach(neumaticos => { %>
+                <tr>
+                    <th scope="row"><%= neumaticos.id %></th>
+                    <td><%= neumaticos.medida %> </td>
+                    <td><%= neumaticos.marca %></td>
+                    <td><%= neumaticos.ubicacion %></td>
+                    <td><%= neumaticos.precio*1.21 %></td>
+                    <td><%= neumaticos.stock %></td>
+                    <td><%= neumaticos.estado %></td>
+                    <td><%= neumaticos.categoria %></td>
+                    </tr>
+            <% }) %>
+        <% } %>
+        </tbody>
+    </table>
